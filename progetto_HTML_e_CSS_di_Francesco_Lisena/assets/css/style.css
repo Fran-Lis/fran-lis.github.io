@@ -1,0 +1,137 @@
+@font-face{
+    font-family: "Roboto";
+    src: url("Roboto-Light-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face{
+    font-family: "Roboto";
+    src: url("Roboto-Bold-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: 200;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/code1\(2\).JPG);
+    font-family: "Roboto", sans-serif;
+}
+header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #212020;
+    color: #FFF;
+}
+header h1, header h2{
+    margin: 10px;
+}
+.menu-container{
+    width: 100%;
+    margin-top: 20px;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+.menu-element{
+    border-top: 1px solid #BDBDBD;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.menu a, .menu a:visited{
+    text-decoration: none;
+    color: #00CBCC;
+}
+.menu .selected, .menu .selected:visited, .menu a:active{
+    color: #5EBD32;
+}
+#big-text-container{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+#big-text{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #FFF;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    background-color: #BDBDBD;
+    padding: 20px;
+}
+.profile-header{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.p-img-container{
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin-right: 30px; 
+}
+.profile-image{
+    width: 80%;
+    margin-left: 10%;
+}
+p{
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+/*Tablet*/
+@media only screen and (min-width: 601px) and (max-width: 1000px){
+    .menu{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .menu-element{
+        border-top: none;
+    }
+    #big-text-container{
+        top: 80px;
+    }
+}
+/*Desktop*/
+@media only screen and (min-width: 1001px){
+    .menu{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .menu-element{
+        border-top: none;
+    }
+    .menu a:hover{
+        color: #5EBD32;
+    }
+    .page{
+        width: 80%;
+        margin: auto;
+        padding: 40px;
+    }
+    #big-text-container{
+        top: 80px;
+    }
+}

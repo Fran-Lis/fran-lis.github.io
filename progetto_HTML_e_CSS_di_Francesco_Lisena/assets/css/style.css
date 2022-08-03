@@ -26,7 +26,7 @@ header{
     align-items: center;
     padding-top: 20px;
     background-color: #212020;
-    color: red;
+    color: #FFF;
 }
 header h1, header h2{
     margin: 10px;
@@ -71,9 +71,9 @@ header h1, header h2{
 .page{
     display: flex;
     flex-direction: column;
-    min-height: 500px;
     background-color: #BDBDBD;
     padding: 20px;
+    min-height: 800px;
 }
 .profile-header{
     display: flex;
@@ -102,7 +102,7 @@ a{
     font-weight: bold;
 }
 /*Tablet*/
-@media only screen and (min-width: 601px) and (max-width: 1000px){
+@media only screen and (min-width: 750px) and (max-width: 1100px){
     .menu{
         flex-direction: row;
         justify-content: space-around;
@@ -115,7 +115,7 @@ a{
     }
 }
 /*Desktop*/
-@media only screen and (min-width: 1001px){
+@media only screen and (min-width: 1101px){
     .menu{
         flex-direction: row;
         justify-content: space-around;

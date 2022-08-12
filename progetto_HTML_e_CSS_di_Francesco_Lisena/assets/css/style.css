@@ -31,6 +31,7 @@ header{
     background-color: #212020;
     color: #FFF;
     position: fixed;
+    z-index: 1;
 }
 header h1, header h2{
     margin: 10px;

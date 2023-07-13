@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #343233, #24891F, aqua, #0000A0);
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    color: white;
+    background-color: #343233;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menuContainer{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.menu{
+    display: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.menu a:hover,
+.selected a{
+    color: #24891F;
+}
+
+.menu li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-top: 1px solid #ABABAB;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeText{
+    font-size: 32px;
+    color: black;
+    margin-top: 200px;
+    padding-left: 10px;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    background-color: #ABABAB;
+    padding: 50px;
+    padding-bottom: 800px;
+}
+
+.profile-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-img-container{
+    border: 2px solid black;
+    width: 80px;
+    height: 100px;
+    overflow: hidden;
+    position: static;
+}
+
+.profile-image{
+    width: 100%;
+}
+
+.profile-name{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.text{
+    font-size: 20px;
+}
+
+.text a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.text a:hover{
+    text-decoration: underline;
+}
+
+.projectList, 
+.contactList,
+.projectList a:visited,
+.contactList a:visited{
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+}
+
+textarea{
+    min-width: 50%;
+    min-height: 100px;
+    max-width: 100%;
+}
+
+input,
+textarea{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    font-family: 'VT323', monospace;
+    color: #24891F;
+    background-color: black;
+    font-size: 20px;
+}
+
+form button{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #343233;
+    color: white;
+}
+
+form button:hover{
+    color: aqua;
+}
+
+form button:active{
+    border: 1px solid black;
+    color: #343233;
+    background-color: #ABABAB;
+}
+
+#menuInput{
+    display: none;
+}
+
+#menuInput:checked + .menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.menuButton{
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        height: 100vh;
+    }
+    main{
+        min-height: 100%;
+    }
+    .page{
+        min-height: 100%;
+        width: 100%;
+        margin-top: 0;
+        padding-bottom: 50px;
+    }
+    #hometext{
+        margin-top: 0;
+        padding-left: 0;
+    }
+    input{
+        width: 50%;
+    }
+    textarea{
+        min-height: 150px;
+    }
+    .menu{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .menuButton{
+        display: none;
+    }
+    .menu li{
+        display: block;
+        border-top: none;
+        padding: 0;
+    }
+    .menuContainer{
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .page{
+        width: 70%;
+        margin-top: 30px;
+    }
+    .profile-header{
+        margin-bottom: 100px;
+        padding-top: 50px;
+    }
+    .profile-name{
+        font-size: 25px;
+        margin-right: 20px;
+    }
+    .profile-img-container{
+        position: relative;
+        right: 70px;
+    }
+    input{
+        width: 30%;
+    }
+}

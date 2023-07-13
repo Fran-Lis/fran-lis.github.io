@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesco Lisena - Contatti - Email</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="assets/js/script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("ivl0MDVDxHHApgXVW");
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Email</h1>
+        <nav class="menuContainer">
+            <label for="menuInput" class="menuButton"><span class="material-symbols-outlined">menu</span></label>
+            <input type="checkbox" id="menuInput">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chiSono.html">Chi sono</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page">
+            <p class="text">Qui potete contattarmi per email</p>
+            <form>
+                <input type="text" id="fullName" placeholder="Nome Completo" required>
+                <input type="email" id="email_id" placeholder="Email" required>
+                <textarea id="message" placeholder="Messaggio" required></textarea>
+                <button onclick="sendMail()">Invia</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

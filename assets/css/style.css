@@ -119,9 +119,7 @@ main{
 }
 
 .projectList, 
-.contactList,
-.projectList a:visited,
-.contactList a:visited{
+.contactList{
     margin-top: 30px;
     font-weight: bold;
     color: black;
@@ -190,9 +188,45 @@ form button:active{
     margin-left: 5px;
 }
 
+.projectList{
+    list-style: none;
+}
+
+.project{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.project-title{
+    margin-bottom: 10px;
+}
+
+.project-description{
+    margin-bottom: 15px;
+}
+
+.project-btn,
+.project-btn:visited{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    background-color: #343233;
+    font-weight: lighter;
+    margin-right: 5px;
+}
+
+.project-btn:hover{
+    background-color: #ABABAB;
+    color: #343233;
+    border: 1px solid #343233;
+}
+
 @media only screen and (min-width: 768px){
     body{
-        height: 100vh;
+        min-height: 100vh;
     }
     main{
         min-height: 100%;
@@ -229,6 +263,9 @@ form button:active{
     }
     .menuContainer{
         padding-bottom: 0;
+    }
+    .spacer{
+        height: 800px;
     }
 }
 

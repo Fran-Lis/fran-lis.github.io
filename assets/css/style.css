@@ -88,10 +88,12 @@ main{
 
 .profile-img-container{
     border: 2px solid black;
-    width: 80px;
+    /*width: 80px;*/
+    width: 100px;
     height: 100px;
     overflow: hidden;
     position: static;
+    border-radius: 100%;
 }
 
 .profile-image{
